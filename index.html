@@ -13,6 +13,7 @@
         <div class="audio-info">
             <span class="artist"></span> - <span class="title"></span>
         </div>
+
         <div class="tracker">
             <div class="progressBar">
                 <span class="progress"></span>
@@ -20,16 +21,21 @@
             <span class="duration"></span>
         </div>
         <div class="audio-btn">
-            <button class="prev"></button>
-            <button class="play"></button>
-            <button class="pause"></button>
-            <button class="stop"></button>
-            <button class="next"></button>
+            <span>
+                <button id="prev"></button>
+                <button id="play"></button>
+                <button id="pause"></button>
+                <button id="stop"></button>
+                <button id="next"></button>
+            </span>
         </div>
         <div class="clearfix"></div>
-        <input id="volume" type="range" min="0" max="10" value="4">
-        <br>
-
+        <div class="controlBar">
+            <div id="volumeIcon">
+                 <img src="./photos/volume.png">
+            </div>
+                <input id="volume" type="range" min="0" max="10" value="4">
+        </div>
         <div class="clearfix"></div>
         <ul class="playlist">
             <li song="imagine_dragons - Bad Liar.mp3" cover="badLiarCover.jpg" artist="imagine_dragons">Bad Liar.mp3</li>
@@ -44,7 +50,9 @@
         </ul>
     </div>
 </div>
+<script src="jquery-3.3.1.min.js"></script>
 <script src="main.js"></script>
+
 </body>
 </html>
 
