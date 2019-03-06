@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+body{
+    font-family: Verdana;
+    font-size: 13px;
+    line-height: 1.5em;
+    font-weight: 500;
+    color: #7e192a;
+    background: #1b1b44;
+}
+.clearfix{
+    clear: both;
+}
+.container{
+    width: 350px;
+    min-height: 400px;
+    background: beige;
+    overflow: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 60px auto;
+}
+.audio-image{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    height: 220px;
+}
+.audio-info{
+    text-align: center;
+}
+.audio-info .artist {
+    font-weight: 600;
+}
+.cover{
+    width: 100%;
+    z-index: 1;
+}
+input#volume{
+    width: 95%;
+    -webkit-appearance: none !important;
+    margin-left: 2%;
+    background-color: #ccc;
+    height: 1px;
+    margin-bottom: 20px;
+}
+input#volume::-webkit-slider-thumb{
+    -webkit-appearance: none !important;
+    background: url(./photos/knob.png) no-repeat;
+    height: 12px;
+    width: 12px;
+}
+.audio-btn{
+    width: 90%;
+    display: block;
+    margin: 15px auto;
+    margin-left: 23px;
+    overflow: auto;
+}
+.play{
+    width: 70px;
+    height: 70px;
+    background: url(./photos/playButton.png);
+    background-size: contain;
+    float: left;
+}
+.pause{
+    width: 70px;
+    height: 70px;
+    background: url(./photos/pauseButton.png);
+    background-size: contain;
+    float: left;
+}
+.stop{
+    width: 70px;
+    height: 70px;
+    background: url(./photos/stopButton.png);
+    background-size: contain;
+    float: left;
+}
+.prev{
+    width: 70px;
+    height: 70px;
+    background: url(./photos/prevButton.png);
+    background-size: contain;
+    float: left;
+    margin-top: 12px;
+}
+.next{
+    width: 70px;
+    height: 70px;
+    background: url(./photos/nextButton.png);
+    background-size: contain;
+    margin-top: 12px;
+    float: right;
+}
+.play:hover, .pause:hover, .stop:hover, .prev:hover, .next:hover{
+    cursor:pointer;
+}
+.playlist{
+    list-style: none;
+    padding: 8px;
+}
+.playlist li{
+    cursor: pointer;
+    margin: 4px;
+}
+.playlist li.active{
+    font-weight: 600;
+    padding: 3px;
+    background: #7b7b7b;
+}
+.progressBar{
+    width: 85%;
+    margin-left: 2%;
+    margin-bottom: 20px;
+    margin-top: 9px;
+    height: 10px;
+    background: url(./photos/progress_bg.png) no-repeat;
+    float: left;
+}
+.progress{
+    background: url(./photos/progress.png) no-repeat;
+    height: 10px;
+    display: inline-block;
+}
+.duration{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 4px 6px;
+    background: #1b1b44;
+    border-radius: 5px;
+}
+.tracker{
+    position: relative;
+    width: 100%;
+}
