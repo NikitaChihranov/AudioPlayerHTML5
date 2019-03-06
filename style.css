@@ -31,6 +31,9 @@ body{
     height: 220px;
 }
 .audio-info{
+    font-size: 15px;
+    margin-top: 2em;
+    margin-bottom: 1em;
     text-align: center;
 }
 .audio-info .artist {
@@ -126,7 +129,7 @@ input#volume::-webkit-slider-thumb {
     width: 85%;
     margin-left: 2%;
     margin-bottom: 20px;
-    margin-top: 12px;
+    margin-top: 15px;
     height: 10px;
     background: url(./photos/progress_bg.png) no-repeat;
     float: left;
@@ -135,10 +138,13 @@ input#volume::-webkit-slider-thumb {
     background: url(./photos/progress.png) no-repeat;
     height: 10px;
     display: inline-block;
+    position: absolute;
+    top: 14px;
+    left: 7px;
 }
 .duration{
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 10px;
     padding: 4px 6px;
     background: #1a1a41;
