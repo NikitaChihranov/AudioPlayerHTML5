@@ -77,3 +77,17 @@ function showDuration() {
         $('.progress').css('width',v+'%');
     })
 }
+
+$('#volume').change(function () {
+    audio.volume = parseFloat(this.value / 10);
+});
+
+$('.playlist li').click( function () {
+    audio.pause();
+    playAudio($(this));
+    $('#play').hide();
+    $('#pause').show();
+    $('#duration').fadeIn(400);
+    audio.play();
+    showDuration();
+});
